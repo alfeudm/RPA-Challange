@@ -1,6 +1,6 @@
 from scraper import NewsScraper
 from RPA.Robocorp.WorkItems import WorkItems
-from RPA.Robocorp.tasks import task
+from robocorp.tasks import task
 
 #================= Info =====================
 # Project Structure:
@@ -16,7 +16,7 @@ from RPA.Robocorp.tasks import task
 def my_task():
 
     wi = WorkItems()
-    item = wi.get_input_work_item()
+    #item = wi.get_input_work_item()
     #wi.load_work_item_from_environment()
     search_phrase = wi.get_work_item_variable('search phrase', '')
     category = wi.get_work_item_variable('category', '')
