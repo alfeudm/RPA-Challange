@@ -36,5 +36,6 @@ def attach_excel_file_to_work_item(name_xl):
         logging.info("passou por create") 
         print("passou por create")
         wi.save_work_item(status='SUCCESS')
+        wi.save_work_item(item, status='completed')
     except:
         return None       
