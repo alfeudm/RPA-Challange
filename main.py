@@ -11,7 +11,7 @@ from RPA.Robocorp.WorkItems import WorkItems
 # ├── data_handler.py     # Module for handling data storage
 # └── utils.py            # Module for utility functions like logging and assertions
 
-
+@task
 def main():
 
     wi = WorkItems()
