@@ -80,6 +80,7 @@ class NewsScraper:
 
                     
                     image_path = ''
+                    image_filename = ''
 
                     if not no_image:
                         # Download image

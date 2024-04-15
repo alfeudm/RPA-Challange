@@ -16,7 +16,7 @@ from robocorp.tasks import task
 def my_task():
 
     wi = WorkItems()
-    wi.get_input_work_item()
+    wi.get_input_work_item(RC_WORKSPACE_ID='3aadca60-a409-45a5-b6ca-0965042ff08d')
     search_phrase = wi.get_work_item_variable('search phrase')
     category = wi.get_work_item_variable('category')
     months = int(wi.get_work_item_variable('months'))
