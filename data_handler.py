@@ -26,7 +26,7 @@ def save_to_excel(data):
     return name_xl
 
 
-def attach_excel_file_to_work_item(self, name_xl):
+def attach_excel_file_to_work_item(name_xl):
     # Attach the Excel file to the current work item
     try:
         wi = WorkItems()

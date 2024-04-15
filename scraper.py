@@ -8,7 +8,6 @@ class NewsScraper:
     def __init__(self, search_phrase, category, months, wi):
         self.browser = setup_browser()
         self.search_phrase = search_phrase
-        self.wi = wi
         self.category = category.lower() if category else None
         self.months = months
         self.url = "https://apnews.com/"
@@ -23,7 +22,6 @@ class NewsScraper:
             logging.info("Home page loaded successfully.")
         except AssertionError:
             logging.error("Home page did not load correctly or title mismatch.")
-
 
     def perform_search(self):
         sort_value = apply_sorting(self)
@@ -136,7 +134,7 @@ class NewsScraper:
             self.perform_search()
             self.extract_data()
             name_xl = save_to_excel(self.results)
-            attach_excel_file_to_work_item(self.wi, name_xl)
+            attach_excel_file_to_work_item(name_xl)
         finally:
             self.browser.close_browser()
 

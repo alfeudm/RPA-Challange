@@ -23,11 +23,7 @@ def my_task():
     category = wi.get_work_item_variable('category')
     months = int(wi.get_work_item_variable('months'))
 
-    # search_phrase = item['payload']['search phrase']
-    # category = 'auto'
-    # months = 0
-
-    scraper = NewsScraper(search_phrase, category, months, wi)
+    scraper = NewsScraper(search_phrase, category, months)
     scraper.run()
 
 my_task()
