@@ -15,6 +15,6 @@ dependencies:
     - requests==2.31.0 
     - selenium          # https://pypi.org/project/requests
     - robotframework-seleniumlibrary
-    - openpyxl==3.2
+    - openpyxl
 
     
