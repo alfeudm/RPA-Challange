@@ -1,6 +1,7 @@
 
 import openpyxl
 from datetime import datetime
+from RPA.Robocorp.WorkItems import WorkItems
 
 def save_to_excel(data):
     workbook = openpyxl.Workbook()
@@ -25,5 +26,10 @@ def save_to_excel(data):
 
 
 def attach_excel_file_to_work_item(self, name_xl):
-        # Attach the Excel file to the current work item
-        self.wi.add_output_file(name_xl, name="Processed Data")    
+    # Attach the Excel file to the current work item
+    try:
+        wi = WorkItems()
+        wi.get_input_work_item()
+        wi.add_work_item_file(name_xl, name="Processed Data") 
+    except:
+        return None       
