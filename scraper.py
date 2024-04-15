@@ -65,10 +65,19 @@ class NewsScraper:
                 if (datetime.now() - news_date).days <= self.months * 30:
 
                     # Extract the title
-                    title = self.browser.find_element(f'css=.PageList-items-item:nth-child({str(item)}) > .PagePromo .PagePromo-title').text
-                    logging.info("Getting News' title")
-                    description = self.browser.find_element(f'css=.PageList-items-item:nth-child({str(item)}) .PagePromo-description').text
-                    logging.info("Getting News' Description")
+                    try:
+                        title = self.browser.find_element(f'css=.PageList-items-item:nth-child({str(item)}) > .PagePromo .PagePromo-title').text
+                        logging.info("Getting News' title")
+                    except:
+                        logging.info("News does not have title.")
+                        continue
+
+                    try:
+                        description = self.browser.find_element(f'css=.PageList-items-item:nth-child({str(item)}) .PagePromo-description').text
+                        logging.info("Getting News' Description")
+                    except:
+                        logging.info("News does not have description.")
+                        description = ''
 
                     try:
                         image_url = self.browser.find_element(f'css=.PageList-items-item:nth-child({str(item)}) .Image').get_attribute('src')
