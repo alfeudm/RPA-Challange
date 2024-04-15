@@ -1,5 +1,6 @@
 from scraper import NewsScraper
 from RPA.Robocorp.WorkItems import WorkItems
+from RPA.Robocorp.tasks import task
 
 #================= Info =====================
 # Project Structure:
