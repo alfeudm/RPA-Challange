@@ -1,13 +1,14 @@
 from utils import setup_browser, assert_element, assert_results_count, logging, download_image, re, apply_filters, apply_sorting, replace_page_number
-from data_handler import save_to_excel
+from data_handler import save_to_excel, attach_excel_file_to_work_item
 from datetime import datetime, timedelta
 import os
 
 class NewsScraper:
     
-    def __init__(self, search_phrase, category, months):
+    def __init__(self, search_phrase, category, months, wi):
         self.browser = setup_browser()
         self.search_phrase = search_phrase
+        self.wi = wi
         self.category = category.lower() if category else None
         self.months = months
         self.url = "https://apnews.com/"
@@ -115,7 +116,8 @@ class NewsScraper:
 
             self.browser.go_to(url)
             self.browser.switch_window(self.main_window) 
-            if page >= 2:
+            if page >= 3:
+                
                 break   
 
     def run(self):
@@ -123,7 +125,8 @@ class NewsScraper:
             self.open_site()
             self.perform_search()
             self.extract_data()
-            save_to_excel(self.results)
+            name_xl = save_to_excel(self.results)
+            attach_excel_file_to_work_item(self.wi, name_xl)
         finally:
             self.browser.close_browser()
 

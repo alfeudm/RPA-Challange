@@ -25,7 +25,7 @@ def my_task():
     # category = 'auto'
     # months = 0
 
-    scraper = NewsScraper(search_phrase, category, months)
+    scraper = NewsScraper(search_phrase, category, months, wi)
     scraper.run()
 
 my_task()

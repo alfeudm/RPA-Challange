@@ -16,5 +16,14 @@ def save_to_excel(data):
     for item in data:
         row = [item[key] for key in headers] 
         sheet.append(row)
+
+    name_xl = f"APNewsData_{str_datetime}.xlsx"
     
-    workbook.save(f"APNewsData_{str_datetime}.xlsx")
+    workbook.save(name_xl)
+
+    return name_xl
+
+
+def attach_excel_file_to_work_item(self, name_xl):
+        # Attach the Excel file to the current work item
+        self.wi.add_output_file(name_xl, name="Processed Data")    
