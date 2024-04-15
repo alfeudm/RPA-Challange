@@ -5,7 +5,7 @@ import os
 
 class NewsScraper:
     
-    def __init__(self, search_phrase, category, months, wi):
+    def __init__(self, search_phrase, category, months):
         self.browser = setup_browser()
         self.search_phrase = search_phrase
         self.category = category.lower() if category else None
