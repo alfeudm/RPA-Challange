@@ -1,7 +1,8 @@
 ﻿# RPA-Challange
 
- ```Project Structure:
- ---
+ ```
+Project Structure:
+
  news_scraper
  │
  ├── main.py             # Main script to run the scraper
