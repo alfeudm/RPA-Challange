@@ -29,7 +29,11 @@ def attach_excel_file_to_work_item(self, name_xl):
     # Attach the Excel file to the current work item
     try:
         wi = WorkItems()
-        wi.get_input_work_item()
-        wi.add_work_item_file(name_xl, name="Processed Data") 
+        item = wi.get_input_work_item()
+        print(item)
+        wi.add_work_item_file(name_xl, name="Processed Data")
+        print("passou por add")
+        wi.create_output_work_item(name_xl) 
+        print("passou por create")
     except:
         return None       

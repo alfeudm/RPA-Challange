@@ -1,6 +1,8 @@
 from scraper import NewsScraper
 from RPA.Robocorp.WorkItems import WorkItems
 from robocorp.tasks import task
+import json
+
 
 #================= Info =====================
 # Project Structure:
@@ -21,7 +23,7 @@ def my_task():
     category = wi.get_work_item_variable('category')
     months = int(wi.get_work_item_variable('months'))
 
-    # search_phrase = 'electric car'
+    # search_phrase = item['payload']['search phrase']
     # category = 'auto'
     # months = 0
 
