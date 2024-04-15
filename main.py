@@ -12,7 +12,7 @@ from RPA.Robocorp.WorkItems import WorkItems
 # └── utils.py            # Module for utility functions like logging and assertions
 
 @task
-def main():
+def my_task():
 
     wi = WorkItems()
     item = wi.get_input_work_item()
@@ -24,5 +24,4 @@ def main():
     scraper = NewsScraper(search_phrase, category, months)
     scraper.run()
 
-if __name__ == "__main__":
-    main()
+my_task()
