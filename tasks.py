@@ -17,11 +17,13 @@ def my_task():
 
     wi = WorkItems()
     wi.get_input_work_item()
-    #item = wi.get_input_work_item()
-    #wi.load_work_item_from_environment()
     search_phrase = wi.get_work_item_variable('search phrase')
     category = wi.get_work_item_variable('category')
     months = int(wi.get_work_item_variable('months'))
+
+    # search_phrase = 'electric car'
+    # category = 'auto'
+    # months = 0
 
     scraper = NewsScraper(search_phrase, category, months)
     scraper.run()

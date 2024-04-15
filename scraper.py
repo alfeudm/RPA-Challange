@@ -114,7 +114,9 @@ class NewsScraper:
                 url = replace_page_number(url, page + 1)
 
             self.browser.go_to(url)
-            self.browser.switch_window(self.main_window)    
+            self.browser.switch_window(self.main_window) 
+            if page >= 2:
+                break   
 
     def run(self):
         try:
