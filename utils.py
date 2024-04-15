@@ -44,7 +44,10 @@ def download_image(url, title):
         filename = ' '.join(words)
         filename = re.sub(r'[^a-zA-Z0-9\s]', '', filename)
         filename = filename + '.png'
-        filepath = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'images', filename)
+        filepath = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'images')
+        if not os.path.exists(filepath):
+            os.makedirs(filepath)
+        filepath = os.path.join(filepath, filename)
         with open(filepath, 'wb') as f:
             f.write(response.content)
         return filename
