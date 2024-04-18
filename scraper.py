@@ -94,6 +94,7 @@ class NewsScraper:
                         image_filename = download_image(image_url, title)
                         logging.info("Saving image")
                         work_items = WorkItems()
+                        work_items.get_input_work_item()
                         image_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'images', image_filename)
                         work_items.add_work_item_file(image_path, image_filename)
 
