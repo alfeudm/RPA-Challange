@@ -34,14 +34,9 @@ def attach_excel_file_to_work_item(excel_path):
         item = wi.get_input_work_item()
         logging.info("creating output workitem") 
         wi.create_output_work_item(files=excel_path, save=True)
-        logging.info("Adding file to artifact")
-        wi.add_work_item_file(excel_path) 
-        wi.save_work_item()
-        wi.active_input.add_file(excel_path)
+        logging.info("Adding files to artifact")
         wi.add_work_item_file(excel_path)
-        wi.current.load()
-        wi.active_input.add_file(excel_path)
-        wi.release_input_work_item("DONE")
         wi.save_work_item()
+        wi.release_input_work_item("DONE")
     except:
         return None       

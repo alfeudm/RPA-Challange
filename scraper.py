@@ -17,6 +17,7 @@ class NewsScraper:
 
     def open_site(self):
         self.main_window = self.browser.get_window_handles()[0]
+        logging.info("Loading Browser")
         self.browser.go_to(self.url)
         try:
             assert_element(self.browser, "AP", element_type="title")
@@ -37,13 +38,16 @@ class NewsScraper:
         self.browser.wait_until_page_contains_element('xpath=//bsp-list-loadmore/div[2]/div', timeout=30)
         self.browser.switch_window(self.main_window)
 
+        logging.info("Getting Page Count")
         for page in range(self.page_number):
             page = page + 1
 
             for item in range(30):
+                logging.info("Getting Page Item")
                 item = item + 1
  
                 try:
+                    logging.info("Trying to get News Date")
                     date_text = self.browser.find_element(f'css=.PageList-items-item:nth-child({str(item)}) .PagePromo-byline span').text
                     date_text = date_text.split(',')
                     date = date_text[1] + ',' + date_text[2]
@@ -51,6 +55,7 @@ class NewsScraper:
                     news_date = datetime.strptime(date, '%B %d, %Y')
                 except:
                     try:
+                        logging.info("Date found in a different format")
                         date_text = self.browser.find_element(f'css=.PageList-items-item:nth-child({str(item)}) .Timestamp-minago').text
                         news_date = datetime.today()
                     except:
@@ -60,7 +65,7 @@ class NewsScraper:
                 logging.info("Getting News' Date")
 
                 # Calculate how many months ago the news was published
-                
+                logging.info("Date found in a different format")
                 if (datetime.now() - news_date).days <= self.months * 30:
 
                     # Extract the title

@@ -20,8 +20,11 @@ def my_task():
     wi.get_input_work_item()
     logging.info("Getting Work Item")
     search_phrase = wi.get_work_item_variable('search phrase')
+    logging.info(f"Getting variable search phrase: {search_phrase}")
     category = wi.get_work_item_variable('category')
+    logging.info(f"Getting variable category: {category}")
     months = int(wi.get_work_item_variable('months'))
+    logging.info(f"Getting variable months: {months}")
     
     scraper = NewsScraper(search_phrase, category, months, wi)
     scraper.run()
