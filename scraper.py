@@ -94,9 +94,11 @@ class NewsScraper:
                         image_filename = download_image(image_url, title)
                         logging.info("Saving image")
                         work_items = WorkItems()
-                        work_items.get_input_work_item()
+                        work_items.get_current_work_item()
+                        work_items.save_work_item(item, status='in progress')
                         image_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'images', image_filename)
                         work_items.add_work_item_file(image_path, image_filename)
+                        work_items.save_work_item(item, status='in progress')
 
                     # Check for monetary values
                     contains_money = bool(re.search(r'\$\d+\.?\d*|\d+\s(dollars|USD)', title + ' ' + 
