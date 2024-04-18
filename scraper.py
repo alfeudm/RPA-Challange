@@ -1,5 +1,5 @@
 from utils import setup_browser, assert_element, assert_results_count, logging, download_image, re, apply_filters, apply_sorting, replace_page_number
-from data_handler import save_to_excel, attach_excel_file_to_work_item
+from data_handler import save_to_excel, attach_excel_file_to_work_item, WorkItems
 from datetime import datetime, timedelta
 import os
 
@@ -93,7 +93,9 @@ class NewsScraper:
                         # Download image
                         image_filename = download_image(image_url, title)
                         logging.info("Saving image")
+                        work_items = WorkItems()
                         image_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'images', image_filename)
+                        work_items.save_artifact(image_path, description=image_filename)
 
                     # Check for monetary values
                     contains_money = bool(re.search(r'\$\d+\.?\d*|\d+\s(dollars|USD)', title + ' ' + 

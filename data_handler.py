@@ -1,11 +1,11 @@
-
-import openpyxl
+from RPA.Excel.Files import Files
 from datetime import datetime
 from RPA.Robocorp.WorkItems import WorkItems
 import logging
 
 def save_to_excel(data):
-    workbook = openpyxl.Workbook()
+    excel = Files()
+    workbook = excel.Workbook()
     sheet = workbook.active
     current_datetime = datetime.now()
     str_datetime = current_datetime.strftime("%Y-%m-%d_%H-%M-%S")
