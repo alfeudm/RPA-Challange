@@ -2,6 +2,7 @@ from RPA.Excel.Files import Files
 from datetime import datetime
 from RPA.Robocorp.WorkItems import WorkItems
 import logging
+import os
 
 def save_to_excel(data):
     excel = Files()
@@ -20,28 +21,27 @@ def save_to_excel(data):
         excel.append_rows_to_worksheet(row)
 
     name_xl = f"APNewsData_{str_datetime}.xlsx"
-    
-    excel.save_workbook(name_xl)
+    excel_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'output', name_xl)
+    excel.save_workbook(excel_path)
 
-    return name_xl
+    return excel_path
 
 
-def attach_excel_file_to_work_item(name_xl):
+def attach_excel_file_to_work_item(excel_path):
     # Attach the Excel file to the current work item
     try:
         wi = WorkItems()
         item = wi.get_input_work_item()
-        # logging.info("creating output workitem") 
-        # wi.create_output_work_item(files=name_xl, save=True)
+        logging.info("creating output workitem") 
+        wi.create_output_work_item(files=excel_path, save=True)
         logging.info("Adding file to artifact")
-        wi.add_work_item_file(name_xl) 
+        wi.add_work_item_file(excel_path) 
         wi.save_work_item()
-        wi.active_input.add_file(name_xl)
-        wi.add_work_item_file(name_xl)
-        wi.release_input_work_item("DONE")
+        wi.active_input.add_file(excel_path)
+        wi.add_work_item_file(excel_path)
         wi.current.load()
-        wi.active_input.add_file(name_xl)
-        wi.outputs.insert(wi, wi.current.id) 
+        wi.active_input.add_file(excel_path)
+        wi.release_input_work_item("DONE")
         wi.save_work_item()
     except:
         return None       

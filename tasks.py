@@ -1,7 +1,6 @@
 from scraper import NewsScraper, logging
 from RPA.Robocorp.WorkItems import WorkItems
 from robocorp.tasks import task
-import json
 
 
 #================= Info =====================
