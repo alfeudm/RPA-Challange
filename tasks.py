@@ -23,7 +23,7 @@ def my_task():
     category = wi.get_work_item_variable('category')
     months = int(wi.get_work_item_variable('months'))
 
-    scraper = NewsScraper(search_phrase, category, months)
+    scraper = NewsScraper(search_phrase, category, months, wi)
     scraper.run()
 
 my_task()

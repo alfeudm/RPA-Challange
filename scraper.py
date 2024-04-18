@@ -5,13 +5,14 @@ import os
 
 class NewsScraper:
     
-    def __init__(self, search_phrase, category, months):
+    def __init__(self, search_phrase, category, months, wi):
         self.browser = setup_browser()
         self.search_phrase = search_phrase
         self.category = category.lower() if category else None
         self.months = months
         self.url = "https://apnews.com/"
         self.main_window = None
+        self.wi = wi
         self.results = []
 
     def open_site(self):
@@ -93,12 +94,10 @@ class NewsScraper:
                         # Download image
                         image_filename = download_image(image_url, title)
                         logging.info("Saving image")
-                        work_items = WorkItems()
-                        work_items.get_current_work_item()
-                        work_items.save_work_item(item, status='in progress')
+                        self.wi.save_work_item(item, status='in progress')
                         image_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'images', image_filename)
-                        work_items.add_work_item_file(image_path, image_filename)
-                        work_items.save_work_item(item, status='in progress')
+                        self.wi.add_work_item_file(image_path, image_filename)
+                        self.wi.save_work_item(item, status='in progress')
 
                     # Check for monetary values
                     contains_money = bool(re.search(r'\$\d+\.?\d*|\d+\s(dollars|USD)', title + ' ' + 
