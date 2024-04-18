@@ -81,7 +81,6 @@ def apply_filters(self):
         except Exception as e:
             logging.error(f"Error during filter application: {str(e)}")
 
-
 def apply_sorting(self):
     sort_options = {'newest': '3', 'oldest': '2', 'relevance': '0'}
 
