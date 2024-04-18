@@ -31,10 +31,10 @@ def attach_excel_file_to_work_item(name_xl):
     try:
         wi = WorkItems()
         item = wi.get_input_work_item()
-        print(item)
+        logging.info("creating output workitem") 
         wi.create_output_work_item(files=name_xl, save=True)
-        logging.info("passou por create") 
-        print("passou por create")
+        logging.info("Adding file to artifact")
+        wi.add_work_item_file(name_xl) 
         wi.save_work_item(item, status='completed')
     except:
         return None       
