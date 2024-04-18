@@ -5,19 +5,19 @@ import logging
 
 def save_to_excel(data):
     excel = Files()
-    workbook = excel.Workbook()
+    workbook = excel.create_workbook()
     sheet = workbook.active
     current_datetime = datetime.now()
     str_datetime = current_datetime.strftime("%Y-%m-%d_%H-%M-%S")
 
     if data:
         headers = list(data[0].keys())
-        sheet.append(headers)
+        sheet.append_rows_to_worksheet(headers)
     
     # Append rows of values
     for item in data:
         row = [item[key] for key in headers] 
-        sheet.append(row)
+        sheet.append_rows_to_worksheet(row)
 
     name_xl = f"APNewsData_{str_datetime}.xlsx"
     
