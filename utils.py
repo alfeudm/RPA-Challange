@@ -36,72 +36,72 @@ def assert_results_count(browser, locator):
         raise AssertionError('There is no result for the search')       
     
 def download_image(url, title):
+    #Download an image from a URL and save it locally 
+    #with a sanitized title as the filename.
     response = requests.get(url)
     if response.status_code == 200:
         # Save the image locally
-        words = title.split()
-        words = words[:2]
+        words = title.split()[:2]  # Use only the first two words of the title
         filename = ' '.join(words)
-        filename = re.sub(r'[^a-zA-Z0-9\s]', '', filename)
-        filename = filename + '.png'
-        filepath = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'output')
-        if not os.path.exists(filepath):
-            os.makedirs(filepath)
-        filepath = os.path.join(filepath, filename)
-        with open(filepath, 'wb') as f:
-            f.write(response.content)
+        filename = re.sub(r'[^a-zA-Z0-9\s]', '', filename) + '.png'
+        
+        output_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'output')
+        if not os.path.exists(output_dir):
+            os.makedirs(output_dir)
+        
+        filepath = os.path.join(output_dir, filename)
+        with open(filepath, 'wb') as file:
+            file.write(response.content)
+        
         return filename
     else:
         logging.error("Failed to download image from %s", url)
         return None
     
 def apply_filters(self):
-    if self.category:
-        target_category = self.category
-        logging.info(f"Applying filter for category: {self.category}")
+    #Apply filters based on the category to the browser's search functionality.
+    if not self.category:
+        return
 
-        try:
-            self.browser.click_element('css=.SearchFilter-heading > .chevron')
-            if self.browser.is_element_visible('css=.seeAllText'):
-                self.browser.click_element('css=.seeAllText')
-            filters = self.browser.find_elements('xpath=//bsp-toggler/div/ul/li/div')
-            idx = 1
-            for filter_item in filters:
-                label = self.browser.get_text(filter_item)
-                label_text = label.lower()  # Normalize text to lowercase
-                
-                if target_category in label_text:
-                    checkbox = self.browser.find_element(f'xpath=//li[{idx}]/div/div/label/input')
-                    if not self.browser.get_element_attribute(checkbox, 'checked'):
-                        self.browser.click_element(checkbox)
-                        logging.info(f"Applied filter: {label}")
-                        break
+    logging.info(f"Applying filter for category: {self.category}")
+    try:
+        self.browser.click_element('css=.SearchFilter-heading > .chevron')
+        if self.browser.is_element_visible('css=.seeAllText'):
+            self.browser.click_element('css=.seeAllText')
 
-                idx = idx + 1     
-        except Exception as e:
-            logging.error(f"Error during filter application: {str(e)}")
+        filters = self.browser.find_elements('xpath=//bsp-toggler/div/ul/li/div')
+        for index, filter_item in enumerate(filters, start=1):
+            label_text = self.browser.get_text(filter_item).lower()  # Normalize text to lowercase
+
+            if self.category in label_text:
+                checkbox = self.browser.find_element(f'xpath=//li[{index}]/div/div/label/input')
+                if not self.browser.get_element_attribute(checkbox, 'checked'):
+                    self.browser.click_element(checkbox)
+                    logging.info(f"Applied filter: {self.browser.get_text(filter_item)}")
+                    break
+    except Exception as e:
+        logging.error(f"Error during filter application: {str(e)}")
 
 def apply_sorting(self):
+    #Determine the sort value based on the category set for the scraper.
     sort_options = {'newest': '3', 'oldest': '2', 'relevance': '0'}
 
-    if self.category and self.category.lower() in ['newest', 'oldest', 'relevant', 'relevance']:
-        if self.category.lower() == 'newest':
-            sort_value = sort_options.get('newest', '3')
-        elif self.category.lower() == 'oldest':
-            sort_value = sort_options.get('oldest', '2')
-        elif self.category.lower() == 'relevant' or self.category.lower() == 'relevance':
-            sort_value = sort_options.get('relevance', '0')
-    else:
-        sort_value = sort_options.get('newest', '3')            
-    return sort_value    
+    # Normalize the category to lower case
+    category_lower = self.category.lower() if self.category else 'newest'
+
+    # Simplified logic for choosing sort value
+    return sort_options.get(category_lower, '3')   
 
 def replace_page_number(url, new_page_number):
+    #Replace the page number parameter in a URL query string with a new page number.
     parsed_url = urlparse(url)
     query_params = parse_qs(parsed_url.query)
-    query_params['p'] = [str(new_page_number)]
-    new_query = urlencode(query_params, doseq=True)
-    new_url = parsed_url._replace(query=new_query)
+    query_params['p'] = [str(new_page_number)]  # Set new page number
+    new_query = urlencode(query_params, doseq=True)  # Re-encode the query parameters
+    new_url = parsed_url._replace(query=new_query)  # Replace the query part of the URL
+
     return urlunparse(new_url)
+
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
