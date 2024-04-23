@@ -128,8 +128,12 @@ class NewsScraper:
         except Exception as e:
             logging.info("News does not have image or download failed. Error: " + str(e))
 
+        full_text = title + ' ' + description
+        matches = re.findall(re.escape(self.search_phrase), full_text, re.IGNORECASE)
+        count_phrases = len(matches)
+
         # Check for monetary values in the title or description
-        contains_money = bool(re.search(r'\$\d+\.?\d*|\d+\s(dollars|USD)', title))
+        contains_money = bool(re.search(r'\$\d+\.?\d*|\d+\s(dollars|USD)', full_text if description else ''))
         logging.info("Checking for monetary values")
 
         # Append result to the results list
@@ -138,6 +142,7 @@ class NewsScraper:
             'date': news_date,
             'description': description,
             'picture_filename': image_filename,
+            'count_search_phrase': count_phrases, 
             'contains_money': contains_money,
             'image_path': image_path
         })

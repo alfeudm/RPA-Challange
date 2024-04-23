@@ -1,0 +1,571 @@
+2024-04-22 21:08:10,166 - RPA.core.certificates - INFO - Truststore injection done, using system certificate store to validate HTTPS.
+2024-04-22 21:09:10,914 - INFO - Resolving input path: c:\Users\vinic\OneDrive\Documentos\python\challenge\RPA-Challange\RPA-Challenge\devdata\work-items-in\teste\work-items.json
+2024-04-22 21:09:10,929 - INFO - Getting Work Item
+2024-04-22 21:09:10,931 - INFO - Getting variable search phrase: technology
+2024-04-22 21:09:10,932 - INFO - Getting variable category: newest
+2024-04-22 21:09:10,932 - INFO - Getting variable months: 0
+2024-04-22 21:10:05,318 - INFO - Downloaded webdriver to: C:\Users\vinic\AppData\Local\robocorp\webdrivers\.wdm\drivers\chromedriver\win64\124.0.6367.60\chromedriver-win32/chromedriver.exe
+2024-04-22 21:10:05,598 - INFO - Webdriver version taken into use: ChromeDriver 124.0.6367.60 (8771130bd84f76d855ae42fbe02752b03e352f17-refs/branch-heads/6367@{#798})
+
+2024-04-22 21:10:05,600 - INFO - Creating an instance of the Chrome WebDriver.
+2024-04-22 21:10:08,125 - INFO - Created Chrome browser (version 124.0.6367) with arguments: --disable-dev-shm-usage --disable-web-security --allow-running-insecure-content --no-sandbox
+2024-04-22 21:10:08,125 - INFO - <p>Attempted combinations:</p><div class="doc"><table><tr><th>Browser</th><th>Download</th><th>Error</th></tr><tr><td>Chrome</td><td>False</td><td>Message: Webdriver executable 'chromedriver' is not in PATH (with disabled Selenium Manager)
+</td></tr><tr><td>Chrome</td><td>True</td><td></td></tr></table></div>
+2024-04-22 21:10:08,130 - INFO - Loading Browser
+2024-04-22 21:10:08,130 - INFO - Opening url 'https://apnews.com/'
+2024-04-22 21:10:53,745 - INFO - Home page loaded successfully.
+2024-04-22 21:10:53,747 - INFO - Opening url 'https://apnews.com/search?q=technology&s=3'
+2024-04-22 21:11:44,023 - INFO - Performing search on: https://apnews.com/search?q=technology&s=3
+2024-04-22 21:11:44,557 - INFO - Ran with keyword <b>Element Should Be Visible</b> which returned error: <i>Element with locator 'css=.SearchResultsModule-noResults' not found.</i>
+2024-04-22 21:11:45,581 - INFO - Results count is 98310, which is greater than 0.
+2024-04-22 21:11:45,620 - INFO - Getting Page Count
+2024-04-22 21:11:45,622 - INFO - Getting Page Item
+2024-04-22 21:11:45,622 - INFO - Trying to get News Date
+2024-04-22 21:11:45,693 - INFO - Getting News' Date
+2024-04-22 21:11:45,694 - INFO - News outdated
+2024-04-22 21:11:45,694 - INFO - Getting Page Item
+2024-04-22 21:11:45,695 - INFO - Trying to get News Date
+2024-04-22 21:11:45,871 - INFO - Date found in a different format
+2024-04-22 21:11:46,099 - INFO - Getting News' Date
+2024-04-22 21:11:46,100 - INFO - Getting Title locator
+2024-04-22 21:11:46,226 - INFO - Getting News' title
+2024-04-22 21:11:46,404 - INFO - Getting News' Description
+2024-04-22 21:11:49,712 - INFO - Downloading and saving News' Image
+2024-04-22 21:11:49,712 - INFO - Adding file: c:\Users\vinic\OneDrive\Documentos\python\challenge\RPA-Challange\RPA-Challenge\output\Bluetooth technology.png
+2024-04-22 21:11:49,714 - INFO - Saved into input file: C:\Users\vinic\OneDrive\Documentos\python\challenge\RPA-Challange\RPA-Challenge\devdata\work-items-in\teste\work-items.json
+2024-04-22 21:11:49,727 - INFO - Created file: C:\Users\vinic\OneDrive\Documentos\python\challenge\RPA-Challange\RPA-Challenge\devdata\work-items-in\teste\Bluetooth technology.png
+2024-04-22 21:11:49,728 - INFO - Saved into input file: C:\Users\vinic\OneDrive\Documentos\python\challenge\RPA-Challange\RPA-Challenge\devdata\work-items-in\teste\work-items.json
+2024-04-22 21:11:49,729 - INFO - Checking for monetary values
+2024-04-22 21:11:49,730 - INFO - Appending results
+2024-04-22 21:11:49,730 - INFO - Getting Page Item
+2024-04-22 21:11:49,730 - INFO - Trying to get News Date
+2024-04-22 21:11:53,571 - INFO - Date found in a different format
+2024-04-22 21:11:53,659 - INFO - Getting News' Date
+2024-04-22 21:11:53,660 - INFO - Getting Title locator
+2024-04-22 21:11:53,740 - INFO - Getting News' title
+2024-04-22 21:11:53,778 - INFO - Getting News' Description
+2024-04-22 21:11:58,319 - INFO - Downloading and saving News' Image
+2024-04-22 21:11:58,319 - INFO - Adding file: c:\Users\vinic\OneDrive\Documentos\python\challenge\RPA-Challange\RPA-Challenge\output\European Space.png
+2024-04-22 21:11:58,321 - INFO - Saved into input file: C:\Users\vinic\OneDrive\Documentos\python\challenge\RPA-Challange\RPA-Challenge\devdata\work-items-in\teste\work-items.json
+2024-04-22 21:11:58,396 - INFO - Created file: C:\Users\vinic\OneDrive\Documentos\python\challenge\RPA-Challange\RPA-Challenge\devdata\work-items-in\teste\European Space.png
+2024-04-22 21:11:58,397 - INFO - Saved into input file: C:\Users\vinic\OneDrive\Documentos\python\challenge\RPA-Challange\RPA-Challenge\devdata\work-items-in\teste\work-items.json
+2024-04-22 21:11:58,398 - INFO - Checking for monetary values
+2024-04-22 21:11:58,398 - INFO - Appending results
+2024-04-22 21:11:58,399 - INFO - Getting Page Item
+2024-04-22 21:11:58,399 - INFO - Trying to get News Date
+2024-04-22 21:12:01,370 - INFO - Getting News' Date
+2024-04-22 21:12:01,370 - INFO - Getting Title locator
+2024-04-22 21:12:01,408 - INFO - Getting News' title
+2024-04-22 21:12:01,442 - INFO - Getting News' Description
+2024-04-22 21:12:07,761 - INFO - Downloading and saving News' Image
+2024-04-22 21:12:07,761 - INFO - Adding file: c:\Users\vinic\OneDrive\Documentos\python\challenge\RPA-Challange\RPA-Challenge\output\Biden marks.png
+2024-04-22 21:12:07,763 - INFO - Saved into input file: C:\Users\vinic\OneDrive\Documentos\python\challenge\RPA-Challange\RPA-Challenge\devdata\work-items-in\teste\work-items.json
+2024-04-22 21:12:07,858 - INFO - Created file: C:\Users\vinic\OneDrive\Documentos\python\challenge\RPA-Challange\RPA-Challenge\devdata\work-items-in\teste\Biden marks.png
+2024-04-22 21:12:07,866 - INFO - Saved into input file: C:\Users\vinic\OneDrive\Documentos\python\challenge\RPA-Challange\RPA-Challenge\devdata\work-items-in\teste\work-items.json
+2024-04-22 21:12:07,876 - INFO - Checking for monetary values
+2024-04-22 21:12:07,876 - INFO - Appending results
+2024-04-22 21:12:07,883 - INFO - Getting Page Item
+2024-04-22 21:12:07,886 - INFO - Trying to get News Date
+2024-04-22 21:12:12,469 - INFO - Getting News' Date
+2024-04-22 21:12:12,469 - INFO - Getting Title locator
+2024-04-22 21:12:13,979 - INFO - Getting News' title
+2024-04-22 21:12:14,013 - INFO - Getting News' Description
+2024-04-22 21:12:21,725 - INFO - Downloading and saving News' Image
+2024-04-22 21:12:21,725 - INFO - Adding file: c:\Users\vinic\OneDrive\Documentos\python\challenge\RPA-Challange\RPA-Challenge\output\Biden marks.png
+2024-04-22 21:12:21,727 - INFO - Saved into input file: C:\Users\vinic\OneDrive\Documentos\python\challenge\RPA-Challange\RPA-Challenge\devdata\work-items-in\teste\work-items.json
+2024-04-22 21:12:21,750 - INFO - Created file: C:\Users\vinic\OneDrive\Documentos\python\challenge\RPA-Challange\RPA-Challenge\devdata\work-items-in\teste\Biden marks.png
+2024-04-22 21:12:21,751 - INFO - Saved into input file: C:\Users\vinic\OneDrive\Documentos\python\challenge\RPA-Challange\RPA-Challenge\devdata\work-items-in\teste\work-items.json
+2024-04-22 21:12:21,752 - INFO - Checking for monetary values
+2024-04-22 21:12:21,752 - INFO - Appending results
+2024-04-22 21:12:21,753 - INFO - Getting Page Item
+2024-04-22 21:12:21,753 - INFO - Trying to get News Date
+2024-04-22 21:12:21,849 - INFO - Getting News' Date
+2024-04-22 21:12:21,850 - INFO - Getting Title locator
+2024-04-22 21:12:21,886 - INFO - Getting News' title
+2024-04-22 21:12:21,925 - INFO - Getting News' Description
+2024-04-22 21:12:30,700 - INFO - Downloading and saving News' Image
+2024-04-22 21:12:30,701 - INFO - Adding file: c:\Users\vinic\OneDrive\Documentos\python\challenge\RPA-Challange\RPA-Challenge\output\Stock market.png
+2024-04-22 21:12:30,703 - INFO - Saved into input file: C:\Users\vinic\OneDrive\Documentos\python\challenge\RPA-Challange\RPA-Challenge\devdata\work-items-in\teste\work-items.json
+2024-04-22 21:12:30,712 - INFO - Created file: C:\Users\vinic\OneDrive\Documentos\python\challenge\RPA-Challange\RPA-Challenge\devdata\work-items-in\teste\Stock market.png
+2024-04-22 21:12:30,713 - INFO - Saved into input file: C:\Users\vinic\OneDrive\Documentos\python\challenge\RPA-Challange\RPA-Challenge\devdata\work-items-in\teste\work-items.json
+2024-04-22 21:12:30,714 - INFO - Checking for monetary values
+2024-04-22 21:12:30,715 - INFO - Appending results
+2024-04-22 21:12:30,715 - INFO - Getting Page Item
+2024-04-22 21:12:30,716 - INFO - Trying to get News Date
+2024-04-22 21:12:31,570 - INFO - Getting News' Date
+2024-04-22 21:12:31,571 - INFO - Getting Title locator
+2024-04-22 21:12:31,705 - INFO - Getting News' title
+2024-04-22 21:12:31,741 - INFO - Getting News' Description
+2024-04-22 21:12:33,896 - INFO - Downloading and saving News' Image
+2024-04-22 21:12:33,896 - INFO - Adding file: c:\Users\vinic\OneDrive\Documentos\python\challenge\RPA-Challange\RPA-Challenge\output\Without cameras.png
+2024-04-22 21:12:33,898 - INFO - Saved into input file: C:\Users\vinic\OneDrive\Documentos\python\challenge\RPA-Challange\RPA-Challenge\devdata\work-items-in\teste\work-items.json
+2024-04-22 21:12:34,026 - INFO - Created file: C:\Users\vinic\OneDrive\Documentos\python\challenge\RPA-Challange\RPA-Challenge\devdata\work-items-in\teste\Without cameras.png
+2024-04-22 21:12:34,033 - INFO - Saved into input file: C:\Users\vinic\OneDrive\Documentos\python\challenge\RPA-Challange\RPA-Challenge\devdata\work-items-in\teste\work-items.json
+2024-04-22 21:12:34,042 - INFO - Checking for monetary values
+2024-04-22 21:12:34,043 - INFO - Appending results
+2024-04-22 21:12:34,045 - INFO - Getting Page Item
+2024-04-22 21:12:34,045 - INFO - Trying to get News Date
+2024-04-22 21:12:36,727 - INFO - Getting News' Date
+2024-04-22 21:12:36,728 - INFO - Getting Title locator
+2024-04-22 21:12:36,837 - INFO - Getting News' title
+2024-04-22 21:12:36,907 - INFO - Getting News' Description
+2024-04-22 21:12:38,460 - INFO - Downloading and saving News' Image
+2024-04-22 21:12:38,460 - INFO - Adding file: c:\Users\vinic\OneDrive\Documentos\python\challenge\RPA-Challange\RPA-Challenge\output\Insider QA.png
+2024-04-22 21:12:38,462 - INFO - Saved into input file: C:\Users\vinic\OneDrive\Documentos\python\challenge\RPA-Challange\RPA-Challenge\devdata\work-items-in\teste\work-items.json
+2024-04-22 21:12:38,485 - INFO - Created file: C:\Users\vinic\OneDrive\Documentos\python\challenge\RPA-Challange\RPA-Challenge\devdata\work-items-in\teste\Insider QA.png
+2024-04-22 21:12:38,486 - INFO - Saved into input file: C:\Users\vinic\OneDrive\Documentos\python\challenge\RPA-Challange\RPA-Challenge\devdata\work-items-in\teste\work-items.json
+2024-04-22 21:12:38,487 - INFO - Checking for monetary values
+2024-04-22 21:12:38,487 - INFO - Appending results
+2024-04-22 21:12:38,487 - INFO - Getting Page Item
+2024-04-22 21:12:38,487 - INFO - Trying to get News Date
+2024-04-22 21:12:38,824 - INFO - Getting News' Date
+2024-04-22 21:12:38,825 - INFO - Getting Title locator
+2024-04-22 21:12:38,859 - INFO - Getting News' title
+2024-04-22 21:12:38,895 - INFO - Getting News' Description
+2024-04-22 21:12:38,931 - INFO - News does not have image or download failed. Error: Element with locator 'css=.PageList-items-item:nth-child(9) .Image' not found.
+2024-04-22 21:12:38,932 - INFO - Checking for monetary values
+2024-04-22 21:12:38,932 - INFO - Appending results
+2024-04-22 21:12:38,933 - INFO - Getting Page Item
+2024-04-22 21:12:38,933 - INFO - Trying to get News Date
+2024-04-22 21:12:38,972 - INFO - Getting News' Date
+2024-04-22 21:12:38,972 - INFO - Getting Title locator
+2024-04-22 21:12:39,097 - INFO - Getting News' title
+2024-04-22 21:12:39,130 - INFO - Getting News' Description
+2024-04-22 21:12:46,141 - INFO - Downloading and saving News' Image
+2024-04-22 21:12:46,142 - INFO - Adding file: c:\Users\vinic\OneDrive\Documentos\python\challenge\RPA-Challange\RPA-Challenge\output\For years.png
+2024-04-22 21:12:46,144 - INFO - Saved into input file: C:\Users\vinic\OneDrive\Documentos\python\challenge\RPA-Challange\RPA-Challenge\devdata\work-items-in\teste\work-items.json
+2024-04-22 21:12:46,174 - INFO - Created file: C:\Users\vinic\OneDrive\Documentos\python\challenge\RPA-Challange\RPA-Challenge\devdata\work-items-in\teste\For years.png
+2024-04-22 21:12:46,176 - INFO - Saved into input file: C:\Users\vinic\OneDrive\Documentos\python\challenge\RPA-Challange\RPA-Challenge\devdata\work-items-in\teste\work-items.json
+2024-04-22 21:12:46,177 - INFO - Checking for monetary values
+2024-04-22 21:12:46,179 - INFO - Appending results
+2024-04-22 21:12:46,180 - INFO - Getting Page Item
+2024-04-22 21:12:46,180 - INFO - Trying to get News Date
+2024-04-22 21:12:46,385 - INFO - Getting News' Date
+2024-04-22 21:12:46,386 - INFO - Getting Title locator
+2024-04-22 21:12:46,425 - INFO - Getting News' title
+2024-04-22 21:12:46,472 - INFO - Getting News' Description
+2024-04-22 21:12:47,844 - INFO - Downloading and saving News' Image
+2024-04-22 21:12:47,844 - INFO - Adding file: c:\Users\vinic\OneDrive\Documentos\python\challenge\RPA-Challange\RPA-Challenge\output\Report urges.png
+2024-04-22 21:12:47,846 - INFO - Saved into input file: C:\Users\vinic\OneDrive\Documentos\python\challenge\RPA-Challange\RPA-Challenge\devdata\work-items-in\teste\work-items.json
+2024-04-22 21:12:47,860 - INFO - Created file: C:\Users\vinic\OneDrive\Documentos\python\challenge\RPA-Challange\RPA-Challenge\devdata\work-items-in\teste\Report urges.png
+2024-04-22 21:12:47,861 - INFO - Saved into input file: C:\Users\vinic\OneDrive\Documentos\python\challenge\RPA-Challange\RPA-Challenge\devdata\work-items-in\teste\work-items.json
+2024-04-22 21:12:47,861 - INFO - Checking for monetary values
+2024-04-22 21:12:47,862 - INFO - Appending results
+2024-04-22 21:12:47,862 - INFO - Getting Page Item
+2024-04-22 21:12:47,862 - INFO - Trying to get News Date
+2024-04-22 21:12:47,974 - INFO - Getting News' Date
+2024-04-22 21:12:47,976 - INFO - Getting Title locator
+2024-04-22 21:12:48,083 - INFO - Getting News' title
+2024-04-22 21:12:48,146 - INFO - Getting News' Description
+2024-04-22 21:12:48,179 - INFO - News does not have image or download failed. Error: Element with locator 'css=.PageList-items-item:nth-child(12) .Image' not found.
+2024-04-22 21:12:48,180 - INFO - Checking for monetary values
+2024-04-22 21:12:48,181 - INFO - Appending results
+2024-04-22 21:12:48,182 - INFO - Getting Page Item
+2024-04-22 21:12:48,182 - INFO - Trying to get News Date
+2024-04-22 21:12:48,238 - INFO - Getting News' Date
+2024-04-22 21:12:48,238 - INFO - Getting Title locator
+2024-04-22 21:12:48,332 - INFO - Getting News' title
+2024-04-22 21:12:48,367 - INFO - Getting News' Description
+2024-04-22 21:12:49,607 - INFO - Downloading and saving News' Image
+2024-04-22 21:12:49,608 - INFO - Adding file: c:\Users\vinic\OneDrive\Documentos\python\challenge\RPA-Challange\RPA-Challenge\output\European Space.png
+2024-04-22 21:12:49,610 - INFO - Saved into input file: C:\Users\vinic\OneDrive\Documentos\python\challenge\RPA-Challange\RPA-Challenge\devdata\work-items-in\teste\work-items.json
+2024-04-22 21:12:49,619 - INFO - Created file: C:\Users\vinic\OneDrive\Documentos\python\challenge\RPA-Challange\RPA-Challenge\devdata\work-items-in\teste\European Space.png
+2024-04-22 21:12:49,620 - INFO - Saved into input file: C:\Users\vinic\OneDrive\Documentos\python\challenge\RPA-Challange\RPA-Challenge\devdata\work-items-in\teste\work-items.json
+2024-04-22 21:12:49,621 - INFO - Checking for monetary values
+2024-04-22 21:12:49,621 - INFO - Appending results
+2024-04-22 21:12:49,622 - INFO - Getting Page Item
+2024-04-22 21:12:49,622 - INFO - Trying to get News Date
+2024-04-22 21:12:49,671 - INFO - Getting News' Date
+2024-04-22 21:12:49,672 - INFO - Getting Title locator
+2024-04-22 21:12:49,705 - INFO - Getting News' title
+2024-04-22 21:12:49,745 - INFO - Getting News' Description
+2024-04-22 21:12:49,768 - INFO - News does not have image or download failed. Error: Element with locator 'css=.PageList-items-item:nth-child(14) .Image' not found.
+2024-04-22 21:12:49,769 - INFO - Checking for monetary values
+2024-04-22 21:12:49,769 - INFO - Appending results
+2024-04-22 21:12:49,770 - INFO - Getting Page Item
+2024-04-22 21:12:49,770 - INFO - Trying to get News Date
+2024-04-22 21:12:49,806 - INFO - Getting News' Date
+2024-04-22 21:12:49,806 - INFO - Getting Title locator
+2024-04-22 21:12:49,858 - INFO - Getting News' title
+2024-04-22 21:12:49,908 - INFO - Getting News' Description
+2024-04-22 21:12:54,628 - INFO - Downloading and saving News' Image
+2024-04-22 21:12:54,629 - INFO - Adding file: c:\Users\vinic\OneDrive\Documentos\python\challenge\RPA-Challange\RPA-Challenge\output\Russia convicts.png
+2024-04-22 21:12:54,631 - INFO - Saved into input file: C:\Users\vinic\OneDrive\Documentos\python\challenge\RPA-Challange\RPA-Challenge\devdata\work-items-in\teste\work-items.json
+2024-04-22 21:12:54,655 - INFO - Created file: C:\Users\vinic\OneDrive\Documentos\python\challenge\RPA-Challange\RPA-Challenge\devdata\work-items-in\teste\Russia convicts.png
+2024-04-22 21:12:54,656 - INFO - Saved into input file: C:\Users\vinic\OneDrive\Documentos\python\challenge\RPA-Challange\RPA-Challenge\devdata\work-items-in\teste\work-items.json
+2024-04-22 21:12:54,657 - INFO - Checking for monetary values
+2024-04-22 21:12:54,657 - INFO - Appending results
+2024-04-22 21:12:54,658 - INFO - Getting Page Item
+2024-04-22 21:12:54,658 - INFO - Trying to get News Date
+2024-04-22 21:12:54,773 - INFO - Getting News' Date
+2024-04-22 21:12:54,774 - INFO - Getting Title locator
+2024-04-22 21:12:54,808 - INFO - Getting News' title
+2024-04-22 21:12:54,851 - INFO - Getting News' Description
+2024-04-22 21:12:57,005 - INFO - Downloading and saving News' Image
+2024-04-22 21:12:57,006 - INFO - Adding file: c:\Users\vinic\OneDrive\Documentos\python\challenge\RPA-Challange\RPA-Challenge\output\The EU.png
+2024-04-22 21:12:57,008 - INFO - Saved into input file: C:\Users\vinic\OneDrive\Documentos\python\challenge\RPA-Challange\RPA-Challenge\devdata\work-items-in\teste\work-items.json
+2024-04-22 21:12:57,019 - INFO - Created file: C:\Users\vinic\OneDrive\Documentos\python\challenge\RPA-Challange\RPA-Challenge\devdata\work-items-in\teste\The EU.png
+2024-04-22 21:12:57,020 - INFO - Saved into input file: C:\Users\vinic\OneDrive\Documentos\python\challenge\RPA-Challange\RPA-Challenge\devdata\work-items-in\teste\work-items.json
+2024-04-22 21:12:57,021 - INFO - Checking for monetary values
+2024-04-22 21:12:57,022 - INFO - Appending results
+2024-04-22 21:12:57,025 - INFO - Getting Page Item
+2024-04-22 21:12:57,025 - INFO - Trying to get News Date
+2024-04-22 21:12:57,148 - INFO - Getting News' Date
+2024-04-22 21:12:57,148 - INFO - Getting Title locator
+2024-04-22 21:12:57,236 - INFO - Getting News' title
+2024-04-22 21:12:57,281 - INFO - Getting News' Description
+2024-04-22 21:12:58,560 - INFO - Downloading and saving News' Image
+2024-04-22 21:12:58,560 - INFO - Adding file: c:\Users\vinic\OneDrive\Documentos\python\challenge\RPA-Challange\RPA-Challenge\output\What to.png
+2024-04-22 21:12:58,562 - INFO - Saved into input file: C:\Users\vinic\OneDrive\Documentos\python\challenge\RPA-Challange\RPA-Challenge\devdata\work-items-in\teste\work-items.json
+2024-04-22 21:12:58,572 - INFO - Created file: C:\Users\vinic\OneDrive\Documentos\python\challenge\RPA-Challange\RPA-Challenge\devdata\work-items-in\teste\What to.png
+2024-04-22 21:12:58,573 - INFO - Saved into input file: C:\Users\vinic\OneDrive\Documentos\python\challenge\RPA-Challange\RPA-Challenge\devdata\work-items-in\teste\work-items.json
+2024-04-22 21:12:58,574 - INFO - Checking for monetary values
+2024-04-22 21:12:58,574 - INFO - Appending results
+2024-04-22 21:12:58,574 - INFO - Getting Page Item
+2024-04-22 21:12:58,574 - INFO - Trying to get News Date
+2024-04-22 21:12:58,624 - INFO - Getting News' Date
+2024-04-22 21:12:58,625 - INFO - News outdated
+2024-04-22 21:12:58,625 - INFO - Getting Page Item
+2024-04-22 21:12:58,626 - INFO - Trying to get News Date
+2024-04-22 21:12:58,689 - INFO - Getting News' Date
+2024-04-22 21:12:58,689 - INFO - Getting Title locator
+2024-04-22 21:12:58,730 - INFO - Getting News' title
+2024-04-22 21:12:58,772 - INFO - Getting News' Description
+2024-04-22 21:12:58,803 - INFO - News does not have image or download failed. Error: Element with locator 'css=.PageList-items-item:nth-child(19) .Image' not found.
+2024-04-22 21:12:58,804 - INFO - Checking for monetary values
+2024-04-22 21:12:58,804 - INFO - Appending results
+2024-04-22 21:12:58,805 - INFO - Getting Page Item
+2024-04-22 21:12:58,805 - INFO - Trying to get News Date
+2024-04-22 21:12:58,849 - INFO - Getting News' Date
+2024-04-22 21:12:58,850 - INFO - Getting Title locator
+2024-04-22 21:12:58,884 - INFO - Getting News' title
+2024-04-22 21:12:58,930 - INFO - Getting News' Description
+2024-04-22 21:12:58,956 - INFO - News does not have image or download failed. Error: Element with locator 'css=.PageList-items-item:nth-child(20) .Image' not found.
+2024-04-22 21:12:58,957 - INFO - Checking for monetary values
+2024-04-22 21:12:58,957 - INFO - Appending results
+2024-04-22 21:12:58,957 - INFO - Getting Page Item
+2024-04-22 21:12:58,957 - INFO - Trying to get News Date
+2024-04-22 21:12:59,286 - INFO - Getting News' Date
+2024-04-22 21:12:59,286 - INFO - Getting Title locator
+2024-04-22 21:13:03,336 - INFO - Getting News' title
+2024-04-22 21:13:04,404 - INFO - Getting News' Description
+2024-04-22 21:13:05,966 - INFO - Downloading and saving News' Image
+2024-04-22 21:13:05,967 - INFO - Adding file: c:\Users\vinic\OneDrive\Documentos\python\challenge\RPA-Challange\RPA-Challenge\output\3 Germans.png
+2024-04-22 21:13:05,969 - INFO - Saved into input file: C:\Users\vinic\OneDrive\Documentos\python\challenge\RPA-Challange\RPA-Challenge\devdata\work-items-in\teste\work-items.json
+2024-04-22 21:13:05,991 - INFO - Created file: C:\Users\vinic\OneDrive\Documentos\python\challenge\RPA-Challange\RPA-Challenge\devdata\work-items-in\teste\3 Germans.png
+2024-04-22 21:13:05,993 - INFO - Saved into input file: C:\Users\vinic\OneDrive\Documentos\python\challenge\RPA-Challange\RPA-Challenge\devdata\work-items-in\teste\work-items.json
+2024-04-22 21:13:05,994 - INFO - Checking for monetary values
+2024-04-22 21:13:05,994 - INFO - Appending results
+2024-04-22 21:13:05,995 - INFO - Getting Page Item
+2024-04-22 21:13:05,995 - INFO - Trying to get News Date
+2024-04-22 21:13:06,280 - INFO - Getting News' Date
+2024-04-22 21:13:06,281 - INFO - News outdated
+2024-04-22 21:13:06,281 - INFO - Getting Page Item
+2024-04-22 21:13:06,281 - INFO - Trying to get News Date
+2024-04-22 21:13:06,533 - INFO - Getting News' Date
+2024-04-22 21:13:06,533 - INFO - Getting Title locator
+2024-04-22 21:13:06,776 - INFO - Getting News' title
+2024-04-22 21:13:06,866 - INFO - Getting News' Description
+2024-04-22 21:13:10,280 - INFO - Downloading and saving News' Image
+2024-04-22 21:13:10,280 - INFO - Adding file: c:\Users\vinic\OneDrive\Documentos\python\challenge\RPA-Challange\RPA-Challenge\output\Japans antimonopoly.png
+2024-04-22 21:13:10,282 - INFO - Saved into input file: C:\Users\vinic\OneDrive\Documentos\python\challenge\RPA-Challange\RPA-Challenge\devdata\work-items-in\teste\work-items.json
+2024-04-22 21:13:10,319 - INFO - Created file: C:\Users\vinic\OneDrive\Documentos\python\challenge\RPA-Challange\RPA-Challenge\devdata\work-items-in\teste\Japans antimonopoly.png
+2024-04-22 21:13:10,322 - INFO - Saved into input file: C:\Users\vinic\OneDrive\Documentos\python\challenge\RPA-Challange\RPA-Challenge\devdata\work-items-in\teste\work-items.json
+2024-04-22 21:13:10,324 - INFO - Checking for monetary values
+2024-04-22 21:13:10,325 - INFO - Appending results
+2024-04-22 21:13:10,326 - INFO - Getting Page Item
+2024-04-22 21:13:10,327 - INFO - Trying to get News Date
+2024-04-22 21:13:11,657 - INFO - Getting News' Date
+2024-04-22 21:13:11,657 - INFO - Getting Title locator
+2024-04-22 21:13:11,736 - INFO - Getting News' title
+2024-04-22 21:13:11,820 - INFO - Getting News' Description
+2024-04-22 21:13:13,194 - INFO - Downloading and saving News' Image
+2024-04-22 21:13:13,195 - INFO - Adding file: c:\Users\vinic\OneDrive\Documentos\python\challenge\RPA-Challange\RPA-Challenge\output\Australian judge.png
+2024-04-22 21:13:13,197 - INFO - Saved into input file: C:\Users\vinic\OneDrive\Documentos\python\challenge\RPA-Challange\RPA-Challenge\devdata\work-items-in\teste\work-items.json
+2024-04-22 21:13:13,208 - INFO - Created file: C:\Users\vinic\OneDrive\Documentos\python\challenge\RPA-Challange\RPA-Challenge\devdata\work-items-in\teste\Australian judge.png
+2024-04-22 21:13:13,209 - INFO - Saved into input file: C:\Users\vinic\OneDrive\Documentos\python\challenge\RPA-Challange\RPA-Challenge\devdata\work-items-in\teste\work-items.json
+2024-04-22 21:13:13,210 - INFO - Checking for monetary values
+2024-04-22 21:13:13,210 - INFO - Appending results
+2024-04-22 21:13:13,210 - INFO - Getting Page Item
+2024-04-22 21:13:13,210 - INFO - Trying to get News Date
+2024-04-22 21:13:13,261 - INFO - Getting News' Date
+2024-04-22 21:13:13,262 - INFO - News outdated
+2024-04-22 21:13:13,262 - INFO - Getting Page Item
+2024-04-22 21:13:13,262 - INFO - Trying to get News Date
+2024-04-22 21:13:13,292 - INFO - Getting News' Date
+2024-04-22 21:13:13,293 - INFO - Getting Title locator
+2024-04-22 21:13:13,323 - INFO - Getting News' title
+2024-04-22 21:13:13,352 - INFO - Getting News' Description
+2024-04-22 21:13:15,344 - INFO - Downloading and saving News' Image
+2024-04-22 21:13:15,345 - INFO - Adding file: c:\Users\vinic\OneDrive\Documentos\python\challenge\RPA-Challange\RPA-Challenge\output\North Korea.png
+2024-04-22 21:13:15,347 - INFO - Saved into input file: C:\Users\vinic\OneDrive\Documentos\python\challenge\RPA-Challange\RPA-Challenge\devdata\work-items-in\teste\work-items.json
+2024-04-22 21:13:15,400 - INFO - Created file: C:\Users\vinic\OneDrive\Documentos\python\challenge\RPA-Challange\RPA-Challenge\devdata\work-items-in\teste\North Korea.png
+2024-04-22 21:13:15,408 - INFO - Saved into input file: C:\Users\vinic\OneDrive\Documentos\python\challenge\RPA-Challange\RPA-Challenge\devdata\work-items-in\teste\work-items.json
+2024-04-22 21:13:15,409 - INFO - Checking for monetary values
+2024-04-22 21:13:15,409 - INFO - Appending results
+2024-04-22 21:13:15,409 - INFO - Getting Page Item
+2024-04-22 21:13:15,409 - INFO - Trying to get News Date
+2024-04-22 21:13:15,524 - INFO - Getting News' Date
+2024-04-22 21:13:15,524 - INFO - Getting Title locator
+2024-04-22 21:13:15,608 - INFO - Getting News' title
+2024-04-22 21:13:15,652 - INFO - Getting News' Description
+2024-04-22 21:13:18,077 - INFO - Downloading and saving News' Image
+2024-04-22 21:13:18,078 - INFO - Adding file: c:\Users\vinic\OneDrive\Documentos\python\challenge\RPA-Challange\RPA-Challenge\output\Local election.png
+2024-04-22 21:13:18,080 - INFO - Saved into input file: C:\Users\vinic\OneDrive\Documentos\python\challenge\RPA-Challange\RPA-Challenge\devdata\work-items-in\teste\work-items.json
+2024-04-22 21:13:18,094 - INFO - Created file: C:\Users\vinic\OneDrive\Documentos\python\challenge\RPA-Challange\RPA-Challenge\devdata\work-items-in\teste\Local election.png
+2024-04-22 21:13:18,095 - INFO - Saved into input file: C:\Users\vinic\OneDrive\Documentos\python\challenge\RPA-Challange\RPA-Challenge\devdata\work-items-in\teste\work-items.json
+2024-04-22 21:13:18,096 - INFO - Checking for monetary values
+2024-04-22 21:13:18,096 - INFO - Appending results
+2024-04-22 21:13:18,097 - INFO - Getting Page Item
+2024-04-22 21:13:18,097 - INFO - Trying to get News Date
+2024-04-22 21:13:19,240 - INFO - Getting News' Date
+2024-04-22 21:13:19,241 - INFO - Getting Title locator
+2024-04-22 21:13:19,972 - INFO - Getting News' title
+2024-04-22 21:13:20,093 - INFO - Getting News' Description
+2024-04-22 21:13:20,172 - INFO - News does not have image or download failed. Error: Element with locator 'css=.PageList-items-item:nth-child(28) .Image' not found.
+2024-04-22 21:13:20,172 - INFO - Checking for monetary values
+2024-04-22 21:13:20,173 - INFO - Appending results
+2024-04-22 21:13:20,173 - INFO - Getting Page Item
+2024-04-22 21:13:20,173 - INFO - Trying to get News Date
+2024-04-22 21:13:20,292 - INFO - Getting News' Date
+2024-04-22 21:13:20,293 - INFO - Getting Title locator
+2024-04-22 21:13:20,324 - INFO - Getting News' title
+2024-04-22 21:13:20,362 - INFO - Getting News' Description
+2024-04-22 21:13:20,396 - INFO - News does not have image or download failed. Error: Element with locator 'css=.PageList-items-item:nth-child(29) .Image' not found.
+2024-04-22 21:13:20,397 - INFO - Checking for monetary values
+2024-04-22 21:13:20,397 - INFO - Appending results
+2024-04-22 21:13:20,398 - INFO - Getting Page Item
+2024-04-22 21:13:20,398 - INFO - Trying to get News Date
+2024-04-22 21:13:20,448 - INFO - Getting News' Date
+2024-04-22 21:13:20,449 - INFO - Getting Title locator
+2024-04-22 21:13:20,581 - INFO - Getting News' title
+2024-04-22 21:13:20,616 - INFO - Getting News' Description
+2024-04-22 21:13:20,646 - INFO - News does not have image or download failed. Error: Element with locator 'css=.PageList-items-item:nth-child(30) .Image' not found.
+2024-04-22 21:13:20,647 - INFO - Checking for monetary values
+2024-04-22 21:13:20,647 - INFO - Appending results
+2024-04-22 21:13:20,660 - INFO - Opening url 'https://apnews.com/search?q=technology&s=3&p=2'
+2024-04-22 21:13:33,074 - INFO - Getting Page Item
+2024-04-22 21:13:33,074 - INFO - Trying to get News Date
+2024-04-22 21:13:33,269 - INFO - Getting News' Date
+2024-04-22 21:13:33,270 - INFO - Getting Title locator
+2024-04-22 21:13:33,415 - INFO - Getting News' title
+2024-04-22 21:13:33,501 - INFO - Getting News' Description
+2024-04-22 21:13:33,537 - INFO - News does not have image or download failed. Error: Element with locator 'css=.PageList-items-item:nth-child(1) .Image' not found.
+2024-04-22 21:13:33,538 - INFO - Checking for monetary values
+2024-04-22 21:13:33,538 - INFO - Appending results
+2024-04-22 21:13:33,539 - INFO - Getting Page Item
+2024-04-22 21:13:33,539 - INFO - Trying to get News Date
+2024-04-22 21:13:34,328 - INFO - Getting News' Date
+2024-04-22 21:13:34,328 - INFO - Getting Title locator
+2024-04-22 21:13:36,588 - INFO - Getting News' title
+2024-04-22 21:13:37,118 - INFO - Getting News' Description
+2024-04-22 21:13:37,164 - INFO - News does not have image or download failed. Error: Element with locator 'css=.PageList-items-item:nth-child(2) .Image' not found.
+2024-04-22 21:13:37,165 - INFO - Checking for monetary values
+2024-04-22 21:13:37,166 - INFO - Appending results
+2024-04-22 21:13:37,166 - INFO - Getting Page Item
+2024-04-22 21:13:37,167 - INFO - Trying to get News Date
+2024-04-22 21:13:37,208 - INFO - Getting News' Date
+2024-04-22 21:13:37,209 - INFO - Getting Title locator
+2024-04-22 21:13:37,259 - INFO - Getting News' title
+2024-04-22 21:13:37,313 - INFO - Getting News' Description
+2024-04-22 21:13:37,341 - INFO - News does not have image or download failed. Error: Element with locator 'css=.PageList-items-item:nth-child(3) .Image' not found.
+2024-04-22 21:13:37,341 - INFO - Checking for monetary values
+2024-04-22 21:13:37,342 - INFO - Appending results
+2024-04-22 21:13:37,342 - INFO - Getting Page Item
+2024-04-22 21:13:37,343 - INFO - Trying to get News Date
+2024-04-22 21:13:37,380 - INFO - Getting News' Date
+2024-04-22 21:13:37,381 - INFO - Getting Title locator
+2024-04-22 21:13:37,423 - INFO - Getting News' title
+2024-04-22 21:13:37,485 - INFO - Getting News' Description
+2024-04-22 21:13:37,503 - INFO - News does not have image or download failed. Error: Element with locator 'css=.PageList-items-item:nth-child(4) .Image' not found.
+2024-04-22 21:13:37,504 - INFO - Checking for monetary values
+2024-04-22 21:13:37,504 - INFO - Appending results
+2024-04-22 21:13:37,506 - INFO - Getting Page Item
+2024-04-22 21:13:37,506 - INFO - Trying to get News Date
+2024-04-22 21:13:37,536 - INFO - Getting News' Date
+2024-04-22 21:13:37,536 - INFO - Getting Title locator
+2024-04-22 21:13:37,634 - INFO - Getting News' title
+2024-04-22 21:13:37,684 - INFO - Getting News' Description
+2024-04-22 21:13:37,708 - INFO - News does not have image or download failed. Error: Element with locator 'css=.PageList-items-item:nth-child(5) .Image' not found.
+2024-04-22 21:13:37,709 - INFO - Checking for monetary values
+2024-04-22 21:13:37,709 - INFO - Appending results
+2024-04-22 21:13:37,709 - INFO - Getting Page Item
+2024-04-22 21:13:37,709 - INFO - Trying to get News Date
+2024-04-22 21:13:37,753 - INFO - Getting News' Date
+2024-04-22 21:13:37,754 - INFO - Getting Title locator
+2024-04-22 21:13:38,252 - INFO - Getting News' title
+2024-04-22 21:13:38,339 - INFO - Getting News' Description
+2024-04-22 21:13:38,357 - INFO - News does not have image or download failed. Error: Element with locator 'css=.PageList-items-item:nth-child(6) .Image' not found.
+2024-04-22 21:13:38,357 - INFO - Checking for monetary values
+2024-04-22 21:13:38,358 - INFO - Appending results
+2024-04-22 21:13:38,358 - INFO - Getting Page Item
+2024-04-22 21:13:38,358 - INFO - Trying to get News Date
+2024-04-22 21:13:38,386 - INFO - Getting News' Date
+2024-04-22 21:13:38,386 - INFO - Getting Title locator
+2024-04-22 21:13:38,474 - INFO - Getting News' title
+2024-04-22 21:13:38,496 - INFO - Getting News' Description
+2024-04-22 21:13:38,512 - INFO - News does not have image or download failed. Error: Element with locator 'css=.PageList-items-item:nth-child(7) .Image' not found.
+2024-04-22 21:13:38,513 - INFO - Checking for monetary values
+2024-04-22 21:13:38,513 - INFO - Appending results
+2024-04-22 21:13:38,514 - INFO - Getting Page Item
+2024-04-22 21:13:38,514 - INFO - Trying to get News Date
+2024-04-22 21:13:38,537 - INFO - Getting News' Date
+2024-04-22 21:13:38,538 - INFO - Getting Title locator
+2024-04-22 21:13:38,564 - INFO - Getting News' title
+2024-04-22 21:13:38,604 - INFO - Getting News' Description
+2024-04-22 21:13:38,623 - INFO - News does not have image or download failed. Error: Element with locator 'css=.PageList-items-item:nth-child(8) .Image' not found.
+2024-04-22 21:13:38,624 - INFO - Checking for monetary values
+2024-04-22 21:13:38,624 - INFO - Appending results
+2024-04-22 21:13:38,625 - INFO - Getting Page Item
+2024-04-22 21:13:38,625 - INFO - Trying to get News Date
+2024-04-22 21:13:38,654 - INFO - Getting News' Date
+2024-04-22 21:13:38,654 - INFO - Getting Title locator
+2024-04-22 21:13:38,686 - INFO - Getting News' title
+2024-04-22 21:13:38,737 - INFO - Getting News' Description
+2024-04-22 21:13:38,791 - INFO - News does not have image or download failed. Error: Element with locator 'css=.PageList-items-item:nth-child(9) .Image' not found.
+2024-04-22 21:13:38,792 - INFO - Checking for monetary values
+2024-04-22 21:13:38,792 - INFO - Appending results
+2024-04-22 21:13:38,793 - INFO - Getting Page Item
+2024-04-22 21:13:38,793 - INFO - Trying to get News Date
+2024-04-22 21:13:38,836 - INFO - Getting News' Date
+2024-04-22 21:13:38,837 - INFO - Getting Title locator
+2024-04-22 21:13:38,865 - INFO - Getting News' title
+2024-04-22 21:13:38,910 - INFO - Getting News' Description
+2024-04-22 21:13:38,934 - INFO - News does not have image or download failed. Error: Element with locator 'css=.PageList-items-item:nth-child(10) .Image' not found.
+2024-04-22 21:13:38,935 - INFO - Checking for monetary values
+2024-04-22 21:13:38,936 - INFO - Appending results
+2024-04-22 21:13:38,936 - INFO - Getting Page Item
+2024-04-22 21:13:38,937 - INFO - Trying to get News Date
+2024-04-22 21:13:38,961 - INFO - Getting News' Date
+2024-04-22 21:13:38,962 - INFO - Getting Title locator
+2024-04-22 21:13:38,994 - INFO - Getting News' title
+2024-04-22 21:13:39,057 - INFO - Getting News' Description
+2024-04-22 21:13:39,109 - INFO - News does not have image or download failed. Error: Element with locator 'css=.PageList-items-item:nth-child(11) .Image' not found.
+2024-04-22 21:13:39,111 - INFO - Checking for monetary values
+2024-04-22 21:13:39,112 - INFO - Appending results
+2024-04-22 21:13:39,113 - INFO - Getting Page Item
+2024-04-22 21:13:39,113 - INFO - Trying to get News Date
+2024-04-22 21:13:39,210 - INFO - Getting News' Date
+2024-04-22 21:13:39,211 - INFO - Getting Title locator
+2024-04-22 21:13:39,318 - INFO - Getting News' title
+2024-04-22 21:13:39,360 - INFO - Getting News' Description
+2024-04-22 21:13:39,389 - INFO - News does not have image or download failed. Error: Element with locator 'css=.PageList-items-item:nth-child(12) .Image' not found.
+2024-04-22 21:13:39,390 - INFO - Checking for monetary values
+2024-04-22 21:13:39,390 - INFO - Appending results
+2024-04-22 21:13:39,391 - INFO - Getting Page Item
+2024-04-22 21:13:39,391 - INFO - Trying to get News Date
+2024-04-22 21:13:39,426 - INFO - Getting News' Date
+2024-04-22 21:13:39,427 - INFO - Getting Title locator
+2024-04-22 21:13:39,473 - INFO - Getting News' title
+2024-04-22 21:13:39,517 - INFO - Getting News' Description
+2024-04-22 21:13:39,541 - INFO - News does not have image or download failed. Error: Element with locator 'css=.PageList-items-item:nth-child(13) .Image' not found.
+2024-04-22 21:13:39,541 - INFO - Checking for monetary values
+2024-04-22 21:13:39,542 - INFO - Appending results
+2024-04-22 21:13:39,542 - INFO - Getting Page Item
+2024-04-22 21:13:39,542 - INFO - Trying to get News Date
+2024-04-22 21:13:39,653 - INFO - Getting News' Date
+2024-04-22 21:13:39,653 - INFO - Getting Title locator
+2024-04-22 21:13:39,689 - INFO - Getting News' title
+2024-04-22 21:13:39,724 - INFO - Getting News' Description
+2024-04-22 21:13:39,746 - INFO - News does not have image or download failed. Error: Element with locator 'css=.PageList-items-item:nth-child(14) .Image' not found.
+2024-04-22 21:13:39,748 - INFO - Checking for monetary values
+2024-04-22 21:13:39,748 - INFO - Appending results
+2024-04-22 21:13:39,749 - INFO - Getting Page Item
+2024-04-22 21:13:39,749 - INFO - Trying to get News Date
+2024-04-22 21:13:39,778 - INFO - Getting News' Date
+2024-04-22 21:13:39,778 - INFO - Getting Title locator
+2024-04-22 21:13:39,809 - INFO - Getting News' title
+2024-04-22 21:13:39,837 - INFO - Getting News' Description
+2024-04-22 21:13:39,856 - INFO - News does not have image or download failed. Error: Element with locator 'css=.PageList-items-item:nth-child(15) .Image' not found.
+2024-04-22 21:13:39,857 - INFO - Checking for monetary values
+2024-04-22 21:13:39,857 - INFO - Appending results
+2024-04-22 21:13:39,858 - INFO - Getting Page Item
+2024-04-22 21:13:39,858 - INFO - Trying to get News Date
+2024-04-22 21:13:39,891 - INFO - Getting News' Date
+2024-04-22 21:13:39,891 - INFO - News outdated
+2024-04-22 21:13:39,892 - INFO - Getting Page Item
+2024-04-22 21:13:39,892 - INFO - Trying to get News Date
+2024-04-22 21:13:39,928 - INFO - Getting News' Date
+2024-04-22 21:13:39,928 - INFO - News outdated
+2024-04-22 21:13:39,929 - INFO - Getting Page Item
+2024-04-22 21:13:39,929 - INFO - Trying to get News Date
+2024-04-22 21:13:40,037 - INFO - Getting News' Date
+2024-04-22 21:13:40,038 - INFO - News outdated
+2024-04-22 21:13:40,038 - INFO - Getting Page Item
+2024-04-22 21:13:40,039 - INFO - Trying to get News Date
+2024-04-22 21:13:40,157 - INFO - Getting News' Date
+2024-04-22 21:13:40,158 - INFO - News outdated
+2024-04-22 21:13:40,159 - INFO - Getting Page Item
+2024-04-22 21:13:40,159 - INFO - Trying to get News Date
+2024-04-22 21:13:40,294 - INFO - Getting News' Date
+2024-04-22 21:13:40,294 - INFO - News outdated
+2024-04-22 21:13:40,295 - INFO - Getting Page Item
+2024-04-22 21:13:40,295 - INFO - Trying to get News Date
+2024-04-22 21:13:40,370 - INFO - Getting News' Date
+2024-04-22 21:13:40,371 - INFO - News outdated
+2024-04-22 21:13:40,371 - INFO - Getting Page Item
+2024-04-22 21:13:40,372 - INFO - Trying to get News Date
+2024-04-22 21:13:40,478 - INFO - Getting News' Date
+2024-04-22 21:13:40,479 - INFO - News outdated
+2024-04-22 21:13:40,479 - INFO - Getting Page Item
+2024-04-22 21:13:40,479 - INFO - Trying to get News Date
+2024-04-22 21:13:40,555 - INFO - Getting News' Date
+2024-04-22 21:13:40,556 - INFO - News outdated
+2024-04-22 21:13:40,557 - INFO - Getting Page Item
+2024-04-22 21:13:40,557 - INFO - Trying to get News Date
+2024-04-22 21:13:40,585 - INFO - Getting News' Date
+2024-04-22 21:13:40,585 - INFO - News outdated
+2024-04-22 21:13:40,586 - INFO - Getting Page Item
+2024-04-22 21:13:40,586 - INFO - Trying to get News Date
+2024-04-22 21:13:40,617 - INFO - Getting News' Date
+2024-04-22 21:13:40,617 - INFO - News outdated
+2024-04-22 21:13:40,618 - INFO - Getting Page Item
+2024-04-22 21:13:40,618 - INFO - Trying to get News Date
+2024-04-22 21:13:40,656 - INFO - Getting News' Date
+2024-04-22 21:13:40,657 - INFO - News outdated
+2024-04-22 21:13:40,657 - INFO - Getting Page Item
+2024-04-22 21:13:40,658 - INFO - Trying to get News Date
+2024-04-22 21:13:40,690 - INFO - Getting News' Date
+2024-04-22 21:13:40,690 - INFO - News outdated
+2024-04-22 21:13:40,690 - INFO - Getting Page Item
+2024-04-22 21:13:40,691 - INFO - Trying to get News Date
+2024-04-22 21:13:40,722 - INFO - Getting News' Date
+2024-04-22 21:13:40,722 - INFO - News outdated
+2024-04-22 21:13:40,723 - INFO - Getting Page Item
+2024-04-22 21:13:40,723 - INFO - Trying to get News Date
+2024-04-22 21:13:40,751 - INFO - Getting News' Date
+2024-04-22 21:13:40,752 - INFO - News outdated
+2024-04-22 21:13:40,752 - INFO - Getting Page Item
+2024-04-22 21:13:40,752 - INFO - Trying to get News Date
+2024-04-22 21:13:40,776 - INFO - Getting News' Date
+2024-04-22 21:13:40,776 - INFO - News outdated
+2024-04-22 21:13:40,788 - INFO - Opening url 'https://apnews.com/search?q=technology&s=3&p=3'
+2024-04-22 21:13:50,928 - INFO - Closing workbook: <RPA.Excel.Files.XlsxWorkbook object at 0x000001C3837CDE90>
+2024-04-22 21:13:50,933 - INFO - Resolving input path: c:\Users\vinic\OneDrive\Documentos\python\challenge\RPA-Challange\RPA-Challenge\devdata\work-items-in\teste\work-items.json
+2024-04-22 21:13:50,969 - INFO - Creating output work item and adding files.
+2024-04-22 21:13:50,975 - INFO - Adding file: c:\Users\vinic\OneDrive\Documentos\python\challenge\RPA-Challange\RPA-Challenge\output\APNewsData_2024-04-22_21-13-50.xlsx
+2024-04-22 21:13:50,982 - INFO - Saved into output file: C:\Users\vinic\OneDrive\Documentos\python\challenge\RPA-Challange\RPA-Challenge\devdata\work-items-out\run-1\work-items.json
+2024-04-22 21:13:51,005 - INFO - Created file: C:\Users\vinic\OneDrive\Documentos\python\challenge\RPA-Challange\RPA-Challenge\devdata\work-items-out\run-1\APNewsData_2024-04-22_21-13-50.xlsx
+2024-04-22 21:13:51,006 - INFO - Saved into output file: C:\Users\vinic\OneDrive\Documentos\python\challenge\RPA-Challange\RPA-Challenge\devdata\work-items-out\run-1\work-items.json
+2024-04-22 21:13:51,010 - INFO - Adding file: c:\Users\vinic\OneDrive\Documentos\python\challenge\RPA-Challange\RPA-Challenge\output\APNewsData_2024-04-22_21-13-50.xlsx
+2024-04-22 21:13:51,017 - INFO - Saved into output file: C:\Users\vinic\OneDrive\Documentos\python\challenge\RPA-Challange\RPA-Challenge\devdata\work-items-out\run-1\work-items.json
+2024-04-22 21:13:51,023 - INFO - Created file: C:\Users\vinic\OneDrive\Documentos\python\challenge\RPA-Challange\RPA-Challenge\devdata\work-items-out\run-1\APNewsData_2024-04-22_21-13-50.xlsx
+2024-04-22 21:13:51,028 - INFO - Saved into output file: C:\Users\vinic\OneDrive\Documentos\python\challenge\RPA-Challange\RPA-Challenge\devdata\work-items-out\run-1\work-items.json
+2024-04-22 21:13:51,031 - INFO - Releasing item '0' with COMPLETED state and exception: None
+2024-04-22 21:13:51,033 - INFO - Saved into output file: C:\Users\vinic\OneDrive\Documentos\python\challenge\RPA-Challange\RPA-Challenge\devdata\work-items-out\run-1\work-items.json
+2024-04-22 21:13:51,036 - INFO - Excel file successfully attached to the work item.
+2024-04-22 21:13:59,948 - INFO - Finishing
+2024-04-22 21:13:59,951 - INFO - Resolving input path: c:\Users\vinic\OneDrive\Documentos\python\challenge\RPA-Challange\RPA-Challenge\devdata\work-items-in\teste\work-items.json
+2024-04-22 21:13:59,953 - INFO - Getting Work Item
+2024-04-22 21:13:59,953 - INFO - Getting variable search phrase: technology
+2024-04-22 21:13:59,954 - INFO - Getting variable category: newest
+2024-04-22 21:13:59,954 - INFO - Getting variable months: 0
+2024-04-22 21:15:58,817 - INFO - Downloaded webdriver to: C:\Users\vinic\AppData\Local\robocorp\webdrivers\.wdm\drivers\chromedriver\win64\124.0.6367.60\chromedriver-win32/chromedriver.exe
+2024-04-22 21:15:59,200 - INFO - Webdriver version taken into use: ChromeDriver 124.0.6367.60 (8771130bd84f76d855ae42fbe02752b03e352f17-refs/branch-heads/6367@{#798})
+
+2024-04-22 21:15:59,202 - INFO - Creating an instance of the Chrome WebDriver.
+2024-04-22 21:16:14,274 - INFO - Created Chrome browser (version 124.0.6367) with arguments: --disable-dev-shm-usage --disable-web-security --allow-running-insecure-content --no-sandbox
+2024-04-22 21:16:14,274 - INFO - <p>Attempted combinations:</p><div class="doc"><table><tr><th>Browser</th><th>Download</th><th>Error</th></tr><tr><td>Chrome</td><td>False</td><td>Message: Webdriver executable 'chromedriver' is not in PATH (with disabled Selenium Manager)
+</td></tr><tr><td>Chrome</td><td>True</td><td></td></tr></table></div>
+2024-04-22 21:16:14,288 - INFO - Loading Browser
+2024-04-22 21:16:14,288 - INFO - Opening url 'https://apnews.com/'
